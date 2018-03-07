@@ -16,7 +16,7 @@ public abstract class SerenaService {
     private final String name;
     protected ServiceState state = ServiceState.INACTIVE;
     protected Level loggingLevel = Level.INFO;
-    private boolean logToConsole;
+    private boolean logToConsole = true;
 
     private LinkedList<LogRecord> records = new LinkedList<>();
 

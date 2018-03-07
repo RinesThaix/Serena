@@ -238,7 +238,7 @@ public class LoggingPane extends JPanel implements ChangeListener {
 
             @Override
             public Component getListCellRendererComponent(JList list, LogRecord value, int index, boolean isSelected, boolean cellHasFocus) {
-                SimpleDateFormat sf = new SimpleDateFormat("dd-MM hh:mm:ss");
+                SimpleDateFormat sf = new SimpleDateFormat("dd-MM HH:mm:ss");
                 Date date = new Date(value.getMillis());
                 setText(sf.format(date) + "  " + value.getLevel().getName() + "  " + value.getMessage());
                 Color color = getLevelColor(value.getLevel());
